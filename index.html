@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="formulario.css"
+      media="screen"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Registre</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <header>
+        <h1 id="titulo">Cadastrar</h1>
+        <p id="subtitulo">Fa&ccedil;a j&aacute; seu Cadastro</p>
+        <br />
+      </header>
+
+      <form>
+        <div class="form">
+          <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" placeholder="" required />
+          </div>
+
+          <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input
+            type="text"
+            name="sobrenome"
+            id="sobrenome"
+            placeholder=""
+            required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="usuario"><strong>Usuário</strong></label>
+            <input
+            type="text"
+            name="usuario"
+            id="usuario"
+            placeholder=""
+            required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="sexo"><strong>Sexo</strong></label>
+            <select id="sexo">
+              <option selected disabled value="">Selecione</option>
+              <option>Masculino</option>
+              <option>Feminino</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="campo">
+            <label for="senha"><strong>Senha</strong></label>
+            <input type="password" name="senha" id="senha" />
+          </div>
+        </div>
+
+        <div class="animes">
+          <strong>Qual seu anime favorito?</strong>
+          <div class="campo">
+            <label>
+              <input type="radio" name="animeweb" value="naruto" checked /> Naruto
+            </label>
+            <label>
+              <input type="radio" name="animeweb" value="aot" /> Attack on Titan
+            </label>
+            <label>
+              <input type="radio" name="animeweb" value="darling" /> Darling in the
+              Franxx
+            </label>
+            <label>
+              <input type="radio" name="animeweb" value="kny" /> Kimetsu no Yaiba
+            </label>
+          </div>
+        </div>
+          <button class="botao" type="submit">Cadastrar</button>
+        </form>
+      </div>
+  </body>
+</html>
